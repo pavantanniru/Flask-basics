@@ -1,0 +1,13 @@
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/user/<name>')
+
+def func(name):
+    return '<p> hello user : {}</p>'.format(name[99])
+
+if __name__ == '__main__':
+   app.run(debug = True) # set debug = True for debugging your code ..  and Enter the  Debugger PIN: 120-973-745
+    
+    
+ ![Debug mode ! ](https://werkzeug.palletsprojects.com/en/1.0.x/_images/debug-screenshot.png) 
