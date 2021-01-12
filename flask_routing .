@@ -1,0 +1,16 @@
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/')
+
+def route():
+    return '<h1> wellcome to my world </h1>'
+
+@app.route('/information')
+def info():
+    return 'this is info page ...'
+
+
+if __name__ == '__main__':
+   app.run(debug = True)
+   
