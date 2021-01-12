@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/user/<name>') 
 
 def func(name):
-    return '<p> hello user : {}</p>'.format(name)
+    return '<p> hello user : {}</p>'.format(name.upper()
 
 if __name__ == '__main__':
    app.run(debug = True)
