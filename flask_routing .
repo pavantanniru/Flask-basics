@@ -1,16 +1,16 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask # import the module 
+app = Flask(__name__)  # flask take's the current variable name ..  
 
-@app.route('/')
+@app.route('/')  # add decorataor and routing function ..
 
-def route():
-    return '<h1> wellcome to my world </h1>'
+def route():  # view function 
+    return '<h1> wellcome to my world </h1>' 
 
-@app.route('/information')
-def info():
+@app.route('/information')  # again add decorator and routing function which binds the url and funtion 
+def info(): # view function 
     return 'this is info page ...'
 
 
-if __name__ == '__main__':
-   app.run(debug = True)
+if __name__ == '__main__':  
+   app.run(debug = True)  
    
