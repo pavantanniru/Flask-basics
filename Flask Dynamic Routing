@@ -1,0 +1,13 @@
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/user/<name>') 
+
+def func(name):
+    return '<p> hello user : {}</p>'.format(name)
+
+if __name__ == '__main__':
+   app.run(debug = True)
+   
+   
+   ''' Enter url http://127.0.0.1:5000/user/pavantanniru in your local machine using flask ''' 
