@@ -10,4 +10,7 @@ if __name__ == '__main__':
    app.run(debug = True) # set debug = True for debugging your code ..  and Enter the  Debugger PIN: 120-973-745
     
     
+    
+   *** NOTE: when ur deploying or production set debug = False 
+    
  ![Debug mode ! ](https://werkzeug.palletsprojects.com/en/1.0.x/_images/debug-screenshot.png) 
